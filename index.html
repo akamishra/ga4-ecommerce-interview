@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Interview Ecommerce SPA</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5F48LZT');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F48LZT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="header">
+    <div class="container flex justify-between items-center py-16">
+      <h1 class="site-title">Analytico Shop</h1>
+      <nav class="nav flex gap-16">
+        <a href="#/" class="nav__link">Home</a>
+        <a href="#/catalog" class="nav__link">Catalog</a>
+        <a href="#/cart" class="nav__link" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        <a href="#/contact" class="nav__link">Contact</a>
+        <a href="#/dashboard" class="nav__link">Debug</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="app"></main>
+
+  <footer class="footer py-16">
+    <div class="container">
+      <h3 class="mb-8">Subscribe to our Newsletter</h3>
+      <form id="newsletter-form" class="flex gap-8">
+        <input type="email" name="email" id="newsletter-email" class="form-control" placeholder="Your email" required>
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Debug Sidebar -->
+  <aside class="debug-panel" id="debug-panel">
+    <h4 class="debug-panel__title">dataLayer Events</h4>
+    <ul id="dl-events" class="debug-panel__list"></ul>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
