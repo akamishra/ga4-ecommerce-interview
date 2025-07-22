@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytico Shop - GA4 & GTM Interview Platform</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5F48LZT');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F48LZT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <h1>📊 Analytico Shop</h1>
+                    <span class="tagline">GA4 & GTM Interview Platform</span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="catalog">Catalog</a></li>
+                    <li><a href="#" data-page="cart">Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Newsletter Signup</h3>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <select id="newsletter-preferences">
+                            <option value="all">All Updates</option>
+                            <option value="products">Product Updates</option>
+                            <option value="analytics">Analytics News</option>
+                        </select>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Platform Info</h3>
+                    <p>This is a demo ecommerce platform designed for Google Analytics 4 and Google Tag Manager interviews.</p>
+                    <p><strong>⚠️ For Testing Purposes Only</strong></p>
+                    <p>No real transactions or data collection occurs on this site.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Debug Panel -->
+    <div id="debug-panel" class="debug-panel">
+        <div class="debug-header">
+            <h3>🔍 Analytics Debug Panel</h3>
+            <button id="debug-toggle">Hide</button>
+        </div>
+        <div class="debug-content">
+            <h4>Recent DataLayer Events</h4>
+            <div id="debug-events" class="debug-events"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
